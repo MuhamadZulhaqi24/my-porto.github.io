@@ -155,7 +155,7 @@ export default {
           user_email: this.email,
           from_name: this.name,
           message_html: this.text,
-          to_name: "Mahy Mohab",
+          to_name: "Muhamad Zulhaqi",
         };
 
         emailjs
@@ -166,7 +166,7 @@ export default {
             config.emailjs.userID
           )
           .then(
-            (result) => {
+            () => {
               this.showSnackbar = true;
               this.snackbarMessage = "Thanks! Message recieved.";
               this.snackbarColor = "#1aa260";
@@ -175,7 +175,7 @@ export default {
               this.text = "";
               this.name = "";
             },
-            (error) => {
+            () => {
               this.showSnackbar = true;
               this.snackbarMessage = "Oops! Something went wrong.";
               this.snackbarColor = "#64808E";
